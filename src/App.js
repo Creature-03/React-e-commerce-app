@@ -1,18 +1,15 @@
-// Dependencies
-import React from "react";
-import { BrowserRuter as Router, Routes, Route } from 'react-router-dom';
-// Components
-import Home from './components/Home'
+import React from 'react'
 
+import Products from './components/Products/Products/Products';
+import Navbar from './components/Products/Navbar/Navbar';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        
-      </Routes>
-    </Router>
-  );
+const App = () => {
+    return (
+        <div>
+            <Navbar />
+            <Products />
+        </div>
+    )
 }
 
-export default App;
+export default App
