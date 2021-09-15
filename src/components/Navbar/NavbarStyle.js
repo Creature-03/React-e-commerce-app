@@ -1,3 +1,4 @@
+import { blue } from '@material-ui/core/colors';
 import { makeStyles, alpha } from '@material-ui/core/styles';
 
 const drawerWidth = 0;
@@ -9,6 +10,7 @@ export default makeStyles((theme) => ({
         [theme.breakpoints.up('sm')]: {
         width: `calc(100% - ${drawerWidth}px)`,
         marginLeft: drawerWidth,
+        backgroundColor: '#D2EEFF',
         },
     },
     title: {

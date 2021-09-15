@@ -40,7 +40,9 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     };
 
     const Confirmation = () => (
-        <div>Confirmation</div>
+        <div>
+            Confirmation <br /> <br /> Reciept
+        </div>
     );
 
     const Form = () => activeStep == 0
@@ -49,6 +51,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
 
     return (
         <>
+        <div className={classes.container}>
             <div className={classes.toolbar} />
             <main className={classes.layout}>
                 <Paper className={classes.paper}>
@@ -62,7 +65,8 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
                     </Stepper>
                     {activeStep == steps.length ? <Confirmation /> : checkoutToken && <Form />}
                 </Paper>
-            </main>    
+            </main>  
+        </div>  
         </>
     )
 }

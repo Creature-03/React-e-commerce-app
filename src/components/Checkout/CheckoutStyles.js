@@ -29,6 +29,7 @@ export default makeStyles((theme) => ({
       marginBottom: theme.spacing(6),
       padding: theme.spacing(3),
     },
+    
   },
   stepper: {
     padding: theme.spacing(3, 0, 5),
@@ -49,4 +50,8 @@ export default makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  container: {
+    backgroundColor: '#EFFDFF',
+    height: '100vh'
+  }
 }));

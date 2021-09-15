@@ -19,11 +19,29 @@ export default makeStyles((theme) => ({
   },
   link: {
     textDecoration: 'none',
+    margin: '50px',
+    fontSize: '24px',
+    color: 'black',
+    border: '1px solid black',
+    padding: '8px',
+    borderRadius: '10px',
+    '&:hover': {
+      backgroundColor: '#D2EEFF',
+    }
   },
   cardDetails: {
     display: 'flex',
     marginTop: '10%',
     width: '100%',
     justifyContent: 'space-between',
+  },
+  cart: {
+    
+    height: 'fit-content',
+  },
+  cartBg: {
+    backgroundColor: '#EFFDFF',
+    height: '100vh',
+    width: '100vw',
   },
 }));
